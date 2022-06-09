@@ -6,14 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "npm run build && next export",
+    "dev:static": "serve ./out"
   },
   "dependencies": {
+    "@types/node": "^17.0.40",
+    "@types/react": "^18.0.12",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "serve": "^13.0.2",
+    "typescript": "^4.7.3"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6"
   }
